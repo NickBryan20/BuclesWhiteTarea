@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+using namespace std;
 
 int main() {
     //1. Imprima las 10 primeras tablas de
@@ -7,7 +8,7 @@ int main() {
     int numero;
 
     do{
-        cout<<"Digite un numero: "; cin>>numero
+        cout<<"Digite un numero: "; cin>>numero;
     }while((numero<1)  ||  (numero>10));
 
     for(int i=1; i<=10;i++){
@@ -16,8 +17,9 @@ int main() {
 
     cout<<"\n\n";
     system("pause");
+    return 0;
 
-
+}
     //2. Realizar la sumatoria de los 50 primeros números primos
     // Ejemplo: 1 +2 +3 + 5 +   7 + 11 + 13.... + 31 +... etc
     bool primo(int n){
